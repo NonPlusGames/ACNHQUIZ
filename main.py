@@ -21,6 +21,7 @@ def quiz():
   data = response.json()
   with open("data.json", "w") as f:
     json.dump(data, f)
+    
   birthday = request.form['bday']
   animal = request.form['animal']
   personality = request.form['personality']
